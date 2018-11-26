@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+server:
+  port: 8002
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/one-meter/spring-config-server.git
+          searchPaths: config-profile
+  application:
+    name: config-server
