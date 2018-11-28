@@ -10,7 +10,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/one-meter/spring-config-server.git
-          searchPaths: config-profile
+          uri: https://github.com/one-meter/spring-config-server
+          searchPaths: profile
+      label: master
   application:
     name: config-server
